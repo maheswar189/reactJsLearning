@@ -7,7 +7,7 @@ function App() {
     <div>
       {" "}
       Hello world..
-      <Hello name="Robert" message="Welcome to React!" />
+      <Hello name="Robert" message="Welcome to React!" emoji="👋" />
       <Greetings />
     </div>
   );

@@ -1,14 +1,7 @@
-const name = "Rob";
-
-function displayName() {
-  return "WOW...!";
-}
-function Hello(props) {
-  console.log(props);
-  const { name, message } = props;
+function Hello({ name, message, emoji }) {
   return (
     <h1>
-      Hello {name} {message} ! from Hello.jsx
+      Hello {name} {message} {emoji} from Hello.jsx
     </h1>
   );
 }
