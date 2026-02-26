@@ -3,6 +3,7 @@ import Hello from "./components/Hello.jsx";
 import Greetings from "./components/Greetings.jsx";
 import Fruits from "./components/Fruits.jsx";
 import ConditionalComponent from "./components/ConditionalComponent.jsx";
+import ConditionalElementComponent from "./components/ConditionalElementComponent.jsx";
 function App() {
   const person = {
     name: "Robert",
@@ -20,6 +21,7 @@ function App() {
       <Greetings />
       <Fruits />
       <ConditionalComponent />
+      <ConditionalElementComponent />
     </div>
   );
 }
