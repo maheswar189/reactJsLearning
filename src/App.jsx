@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Hello from "./components/Hello.jsx";
 import Greetings from "./components/Greetings.jsx";
-
+import Fruits from "./components/Fruits.jsx";
 function App() {
   const person = {
     name: "Robert",
@@ -17,6 +17,7 @@ function App() {
       Hello world..
       <Hello person={person} />
       <Greetings />
+      <Fruits />
     </div>
   );
 }
