@@ -21,9 +21,9 @@ function App() {
       <Hello person={person} />
       <Greetings />
       <Fruits />
-      <ConditionalComponent />
+      {/**<ConditionalComponent /> 
       <ConditionalElementComponent />
-      <ConditionalComponentTernaryOperator />
+      <ConditionalComponentTernaryOperator />*/}
     </div>
   );
 }
