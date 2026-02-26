@@ -2,6 +2,7 @@ import { useState } from "react";
 import Hello from "./components/Hello.jsx";
 import Greetings from "./components/Greetings.jsx";
 import Fruits from "./components/Fruits.jsx";
+import ConditionalComponent from "./components/ConditionalComponent.jsx";
 function App() {
   const person = {
     name: "Robert",
@@ -18,6 +19,7 @@ function App() {
       <Hello person={person} />
       <Greetings />
       <Fruits />
+      <ConditionalComponent />
     </div>
   );
 }
