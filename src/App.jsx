@@ -5,6 +5,8 @@ import Fruits from "./components/Fruits.jsx";
 import ConditionalComponent from "./components/ConditionalComponent.jsx";
 import ConditionalElementComponent from "./components/ConditionalElementComponent.jsx";
 import ConditionalComponentTernaryOperator from "./components/ConditionalComponentTernaryOperator.jsx";
+
+import Message from "./components/Message.jsx";
 function App() {
   const person = {
     name: "Robert",
@@ -20,10 +22,11 @@ function App() {
       Hello world..
       <Hello person={person} />
       <Greetings />
-      <Fruits />
+      {/** <Fruits />*/}
       {/**<ConditionalComponent /> 
       <ConditionalElementComponent />
       <ConditionalComponentTernaryOperator />*/}
+      <Message />
     </div>
   );
 }
