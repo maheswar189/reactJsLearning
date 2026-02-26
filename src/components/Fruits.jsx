@@ -1,3 +1,5 @@
+import Fruit from "./Fruit";
+
 export default function Fruits() {
   //const fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
   const fruits = [
@@ -11,9 +13,15 @@ export default function Fruits() {
       <h1>Fruits List:</h1>
       <ul>
         {fruits.map((fruit, index) => (
-          <li key={index}>
-            {fruit.emoji} {fruit.name} - ${fruit.price}
-          </li>
+          //   <li key={index}>
+          //     {fruit.emoji} {fruit.name} - ${fruit.price}
+          //   </li>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            emoji={fruit.emoji}
+            price={fruit.price}
+          />
         ))}
       </ul>
     </div>
