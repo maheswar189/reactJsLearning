@@ -5,7 +5,7 @@ import Fruits from "./components/Fruits.jsx";
 import ConditionalComponent from "./components/ConditionalComponent.jsx";
 import ConditionalElementComponent from "./components/ConditionalElementComponent.jsx";
 import ConditionalComponentTernaryOperator from "./components/ConditionalComponentTernaryOperator.jsx";
-
+import Counter from "./components/Counter.jsx";
 import Message from "./components/Message.jsx";
 function App() {
   const person = {
@@ -27,6 +27,7 @@ function App() {
       <ConditionalElementComponent />
       <ConditionalComponentTernaryOperator />*/}
       <Message />
+      <Counter />
     </div>
   );
 }
