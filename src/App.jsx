@@ -7,6 +7,7 @@ import ConditionalElementComponent from "./components/ConditionalElementComponen
 import ConditionalComponentTernaryOperator from "./components/ConditionalComponentTernaryOperator.jsx";
 import Counter from "./components/Counter.jsx";
 import Message from "./components/Message.jsx";
+import Form from "./components/Form.jsx";
 function App() {
   const person = {
     name: "Robert",
@@ -28,6 +29,7 @@ function App() {
       <ConditionalComponentTernaryOperator />*/}
       <Message />
       <Counter />
+      <Form></Form>
     </div>
   );
 }
