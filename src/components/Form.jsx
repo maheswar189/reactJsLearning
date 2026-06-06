@@ -9,21 +9,22 @@ export default function Form() {
 
   return (
     <div>
+      <h1>FORM:::INPUT TYPE FIELDS</h1>
+      {name.firstName} ----{name.lastName}
       <form>
-        <h1>FORM:::</h1>
         <input
           //  onChange={function demo(e) {
           //   return handleChange(e);
           // }}
           onChange={(e) => {
-            setName({ firstName: e.target.value, lastName: "" });
+            setName({ ...name, firstName: e.target.value });
           }}
           type="text"
           value={name.firstName}
         ></input>
         <input
           type="text"
-          onChange={(e) => setName({ firstName: "", lastName: e.target.value })}
+          onChange={(e) => setName({ ...name, lastName: e.target.value })}
           value={name.lastName}
         ></input>
       </form>
