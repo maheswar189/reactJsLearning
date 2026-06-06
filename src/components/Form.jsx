@@ -7,6 +7,11 @@ export default function Form() {
   //setName(e.target.value);
   //}
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("Form submitted with name: ", name.firstName, name.lastName);
+  }
+
   return (
     <div>
       <h1>FORM:::INPUT TYPE FIELDS</h1>
@@ -27,6 +32,7 @@ export default function Form() {
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
           value={name.lastName}
         ></input>
+        <button onClick={(e) => handleSubmit(e)}>ADD</button>
       </form>
     </div>
   );
